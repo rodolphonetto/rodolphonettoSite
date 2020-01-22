@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 export const Container = styled.nav`
   margin: 0 auto;
+  margin-top: 3rem;
   max-width: 90vw;
   height: 8rem;
   display: flex;
@@ -17,6 +18,11 @@ export const LinksContainer = styled.ul`
   justify-content: space-between;
 `
 export const Links = styled.li`
-  font-family: ${props => props.theme.primaryFont};
-  color: white;
+  font-family: ${props => props.theme.primaryFont}, sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: ${props => props.theme.textColor};
+  :not(:first-child) {
+    margin-left: 6rem;
+  }
 `
