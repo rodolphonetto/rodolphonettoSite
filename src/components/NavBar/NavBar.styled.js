@@ -9,7 +9,7 @@ export const Container = styled.nav`
   justify-content: space-between;
   align-items: center;
 `
-export const ImageContainer = styled.div`
+export const ImageContainer = styled.img`
   height: 10rem;
   width: 10rem;
 `

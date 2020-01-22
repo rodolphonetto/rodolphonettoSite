@@ -1,19 +1,14 @@
 import React from "react"
 import * as S from "./NavBar.styled"
 
-import Img from "gatsby-image"
+import Logo from "../../images/gatsby-icon.png"
 
-const NavBar = ({ imagem }) => {
+const NavBar = () => {
   return (
     <S.Container>
-      <S.ImageContainer>
-        <Img
-          fluid={imagem.childImageSharp.fluid}
-          alt="Ilustração referente a webdeveloper"
-        />
-      </S.ImageContainer>
+      <S.ImageContainer src={Logo} />
       <S.LinksContainer>
-        <S.Links>Tech</S.Links>
+        <S.Links>Techs</S.Links>
         <S.Links>Projetos</S.Links>
         <S.Links>Depoimentos</S.Links>
         <S.Links>Artigos</S.Links>
