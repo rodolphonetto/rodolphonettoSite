@@ -19,11 +19,11 @@ export const LinksContainer = styled.ul`
 `
 export const Links = styled.li`
   font-family: ${props => props.theme.primaryFont}, sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
-  letter-spacing: 0.3rem;
+  letter-spacing: 2px;
   color: ${props => props.theme.textColor};
   :not(:first-child) {
-    margin-left: 6rem;
+    margin-left: 4rem;
   }
 `
