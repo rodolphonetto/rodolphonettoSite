@@ -19,7 +19,8 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   padding: 0;
   font-weight: normal;
   &::selection {
-  color: white;
+  color: ${props => props.theme.textColor};
+  background: ${props => props.theme.primaryColor};
 }
 ol, ul {
   list-style: none;
@@ -31,8 +32,8 @@ img {
 
 p, span, a {
   &::selection {
-  color: white;
-
+  color: ${props => props.theme.textColor};
+  background: ${props => props.theme.primaryColor};
 }
 }
 `

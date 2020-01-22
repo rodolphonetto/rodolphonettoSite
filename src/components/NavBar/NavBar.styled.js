@@ -19,8 +19,9 @@ export const LinksContainer = styled.ul`
 `
 export const Links = styled.li`
   font-family: ${props => props.theme.primaryFont}, sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
+  letter-spacing: 0.3rem;
   color: ${props => props.theme.textColor};
   :not(:first-child) {
     margin-left: 6rem;
