@@ -7,6 +7,7 @@ export const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 `
 
 export const TextContainer = styled.div`
@@ -34,4 +35,10 @@ export const Job = styled.span`
 
 export const Illustration = styled.img`
   max-width: 40%;
+`
+
+export const Border = styled.img`
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
 `
