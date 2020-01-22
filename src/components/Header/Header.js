@@ -11,10 +11,10 @@ const Header = () => {
     <>
       <S.Container>
         <S.TextContainer>
-          <Title size="6rem" color="secondary">
+          <Title size="6rem" textColor="secondary">
             Olá, eu sou
           </Title>
-          <Title size="8rem" color="primary">
+          <Title size="8rem" textColor="primary" bold>
             Rodolpho Netto
           </Title>
           <Title size="4rem">Web Developer</Title>

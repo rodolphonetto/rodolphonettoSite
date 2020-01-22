@@ -8,6 +8,7 @@ export const Container = styled.header`
   justify-content: space-between;
   align-items: center;
   position: relative;
+  margin-bottom: 10rem;
 `
 
 export const TextContainer = styled.div`

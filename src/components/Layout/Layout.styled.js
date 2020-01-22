@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components"
+import styled, { createGlobalStyle } from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
   body {
@@ -36,4 +36,12 @@ p, span, a {
   background: ${props => props.theme.primaryColor};
 }
 }
+`
+
+export const Container = styled.div`
+  margin: 0 auto;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  background-color: red;
 `

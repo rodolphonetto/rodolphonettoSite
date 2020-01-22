@@ -47,7 +47,7 @@ const SEO = ({ title, description, image, pathname, article }) => (
             )}
             {seo.image && <meta name="twitter:image" content={seo.image} />}
             <link
-              href="https://fonts.googleapis.com/css?family=Nunito&display=swap"
+              href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap"
               rel="stylesheet"
             />
           </Helmet>

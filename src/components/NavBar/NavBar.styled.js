@@ -22,7 +22,7 @@ export const Links = styled.li`
   font-size: 1.6rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: ${props => props.theme.textColor};
+  color: ${props => props.theme.neutral1};
   :not(:first-child) {
     margin-left: 4rem;
   }
