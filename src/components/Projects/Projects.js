@@ -3,14 +3,26 @@ import React from "react"
 import Title from "../Title/Title"
 import Container from "../Container/Container"
 import Text from "../Text/Text"
+import Project from "./Project/Project"
 
-const Projects = () => {
+const Projects = ({ projects }) => {
+  const projectsComponents = projects.map(project => {
+    return (
+      <Project
+        name={project.name}
+        shortDescription={project.shortDescription}
+        cover={project.cover.childImageSharp.fluid}
+      />
+    )
+  })
+
   return (
     <Container>
       <Title
         size={"4rem"}
         textColor={"primary"}
         marginSize="6rem 0 6rem 0"
+        bold
         center
       >
         Projetos
@@ -29,6 +41,7 @@ const Projects = () => {
         malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate
         dapibus.
       </Text>
+      {projectsComponents}
     </Container>
   )
 }

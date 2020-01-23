@@ -6,13 +6,32 @@ import Layout from "../components/Layout/Layout"
 import Header from "../components/Header/Header"
 import Projects from "../components/Projects/Projects"
 
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
+  console.log(data)
   return (
     <Layout>
       <Header />
-      <Projects />
+      <Projects projects={data.allStrapiProjeto.nodes} />
     </Layout>
   )
 }
+
+export const pageQuery = graphql`
+  query MyQuery {
+    allStrapiProjeto {
+      nodes {
+        name
+        shortDescription
+        cover {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`
 
 export default IndexPage
