@@ -7,7 +7,6 @@ import Header from "../components/Header/Header"
 import Projects from "../components/Projects/Projects"
 
 const IndexPage = ({ data }) => {
-  console.log(data)
   return (
     <Layout>
       <Header />
