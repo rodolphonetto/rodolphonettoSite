@@ -7,7 +7,6 @@ import Header from "../components/Header/Header"
 import Title from "../components/Title/Title"
 
 const ProjectPage = ({ data, pageContext }) => {
-  console.log(pageContext.slug) //retorna o slug correto!!!
   return (
     <Layout>
       <Header />

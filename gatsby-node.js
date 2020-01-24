@@ -43,7 +43,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     return
   }
   // Create pages for each node.
-  const ProjectPage = path.resolve(`./src/pages/project.js`)
+  const ProjectPage = path.resolve(`src/templates/project.js`)
   result.data.allStrapiProjeto.nodes.forEach(node => {
     createPage({
       path: node.fields.slug,
