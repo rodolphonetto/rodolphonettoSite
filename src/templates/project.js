@@ -3,14 +3,31 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/Layout/Layout"
-import Header from "../components/Header/Header"
+import Container from "../components/Container/Container"
 import Title from "../components/Title/Title"
+import Text from "../components/Text/Text"
+import MarkdownText from "../components/MarkdownText/MarkdownText"
 
 const ProjectPage = ({ data, pageContext }) => {
   return (
     <Layout>
-      <Header />
-      <Title>{data.strapiProjeto.name}</Title>
+      <Container>
+        <Title
+          size="4rem"
+          textColor="primary"
+          marginSize="6rem 2rem 2rem 2rem"
+          center
+          bold
+        >
+          {data.strapiProjeto.name}
+        </Title>
+        <MarkdownText
+          size="2rem"
+          lineheight="3.3rem"
+          center
+          source={data.strapiProjeto.description}
+        />
+      </Container>
     </Layout>
   )
 }
@@ -22,6 +39,7 @@ export const query = graphql`
         slug
       }
       name
+      description
     }
   }
 `

@@ -42,6 +42,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
     return
   }
+
   // Create pages for each node.
   const ProjectPage = path.resolve(`src/templates/project.js`)
   result.data.allStrapiProjeto.nodes.forEach(node => {
